@@ -1,0 +1,44 @@
+# --- Exclude whole folders you decided not to publish ---
+/Data/
+/LLM/
+/Barkr LLM/
+/documentation/
+/paper_bundle_2025Q/
+/archive/
+
+# --- Python / notebook cache ---
+**/__pycache__/
+**/*.py[cod]
+**/.ipynb_checkpoints/
+
+# --- Secrets / local env ---
+.env
+.env.*
+Base_OpenAI/env
+*.pem
+*.key
+*.p12
+
+# --- Generated artifacts ---
+**/outputs/
+**/*.csv
+**/*.tsv
+**/*.parquet
+**/*.feather
+**/*.log
+**/*.aux
+**/*.out
+**/*.toc
+**/*.pdf
+**/*.png
+**/*.jpg
+**/*.jpeg
+**/*.svg
+
+# --- Embedded data dirs inside kept model folders ---
+DNN_baseline/artwork/Data/
+DNN_baseline/artwork/Artwork_2026_qtr_samples_300/
+Linear_Regression/artwork/Artwork_2026_qtr_samples_300/
+
+# --- Misc ---
+texput.log
